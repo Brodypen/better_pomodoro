@@ -1,14 +1,10 @@
 import { Metadata } from "next"
-import Image from "next/image"
-import Link from "next/link"
 import AuthForm from "@/components/AuthForm"
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
-// import { UserAuthForm } from "@/app/examples/authentication/components/user-auth-form"
+
 
 export const metadata: Metadata = {
-  title: "Sign in!",
-  description: "Authentication forms built using the components.",
+  title: "Sign in! | BetterPomodoro",
+  description: "Sign in for BetterPomodoro!",
 }
 
 export default function AuthenticationPage() {

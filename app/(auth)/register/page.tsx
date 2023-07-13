@@ -1,9 +1,5 @@
 import { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
-
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
 import AuthForm from "@/components/AuthForm"
 import blub from "@/assets/absurd_design_bulb.png"
 import { Lightbulb } from "lucide-react"
