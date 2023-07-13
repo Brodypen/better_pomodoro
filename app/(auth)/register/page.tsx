@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function AuthenticationPage() {
   return (
     <>
-      <div className="container relative h-screen max-h-screen flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-3 lg:px-0">
+      <div className="container relative h-screen max-h-screen flex-col items-center justify-center grid max-w-none lg:grid-cols-3 lg:px-0">
 
         <div className="col-span-1 relative hidden h-full flex-col bg-muted p-10 text-black dark:border-r lg:flex">
           <div className="absolute inset-0 bg-gradient-to-r from-rose-100 to-teal-100" />
@@ -43,17 +43,8 @@ export default function AuthenticationPage() {
           </div>
         </div>
         <div className="lg:p-8 col-span-2">
-          <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px] ">
+          <div className="mx-auto flex w-full flex-col justify-center space-y-6 min-w-[350px] max-w-[600px] ">
             <AuthForm mode="register"/>
-            <p className="px-8 text-center text-sm text-muted-foreground">
-              Already have an account?{" "}
-              <Link
-                href="/signin"
-                className="underline underline-offset-4 hover:text-primary text-blue-300"
-              >
-                Log in!
-              </Link>
-            </p>
           </div>
         </div>
       </div>
