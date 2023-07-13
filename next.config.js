@@ -10,7 +10,10 @@ const nextConfig =
 },
     eslint: {
     ignoreDuringBuilds: true,
-}
+},
+    experimental: {
+        serverComponentsExternalPackages: ['bcrypt'],
+  },
 }
 
 module.exports = nextConfig
