@@ -12,7 +12,7 @@ const registerContent = {
   linkUrl: "/signin",
   linkText: "Already have an account?",
   header: "Join Better Pomodoro!",
-  subheader: "A better way to Pomodoro",
+  subheader: "Stay productive, stay focused, and stay on track.",
   buttonText: "Register",
 };
 
