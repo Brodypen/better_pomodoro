@@ -34,3 +34,4 @@ const SidebarLink = ({ link }: SidebarLinkProps) => {
     </Link>
   );
 };
+export default SidebarLink
