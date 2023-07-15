@@ -42,9 +42,9 @@ export default async function Page() {
             projects.map((project) => (
               <div key={project.id} className="w-1/3 p-3">
                 <Link href={`/dashboard/projects/${project.id}`}>
-                  <a>
+                  <div>
                     <ProjectCard project={project} />
-                  </a>
+                  </div>
                 </Link>
               </div>
             ))
