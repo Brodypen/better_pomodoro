@@ -1,27 +1,20 @@
-import { createNewProject } from "@/lib/api";
+"use client";
 import { useState } from "react";
-import { revalidatePath } from "next/cache";
-import { validateJWT } from "@/lib/auth";
-import { db } from "@/lib/db";
-import { cookies } from "next/headers";
-import { getUserFromCookie } from "@/lib/auth";
+import { addProject } from "@/app/_actions";
+import { useRef } from "react";
+
 const NewProject = () => {
-    async function addProject(data: FormData) {
-        "use server";
-        const user = await getUserFromCookie(cookies());
-    const name = data.get("name") as string;
-  await db.project.create({
-    data: {
-      name: name,
-      ownerId: user?.id,
-    },
-  });
-    revalidatePath("/home")
-}
+    const formRef = useRef<HTMLFormElement>(null);
+
+    async function action(data: FormData){
+        await addProject(data);
+
+        formRef.current?.reset();
+    }
 
     return (
         <div className="w-full">
-            <form action={addProject}>
+            <form ref={formRef} action={action}>
                 <input type="text" name="name" />
                 <button type="submit">Create</button>
             </form>
