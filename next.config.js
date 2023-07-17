@@ -13,6 +13,7 @@ const nextConfig =
 },
     experimental: {
         serverComponentsExternalPackages: ['bcrypt'],
+        serverActions: true,
   },
 }
 
