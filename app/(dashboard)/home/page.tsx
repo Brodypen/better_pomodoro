@@ -8,7 +8,6 @@ import TaskCard from "@/components/TaskCard";
 import { delay } from "@/lib/async";
 import { getUserFromCookie } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { RequestCookies } from "next/dist/server/web/spec-extension/cookies";
 import { cookies } from "next/headers";
 import Link from "next/link";
 import React, { Suspense } from "react";

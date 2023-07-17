@@ -2,8 +2,9 @@
 import { useState } from "react";
 import { addProject } from "@/app/_actions";
 import { useRef } from "react";
-
+import { experimental_useOptimistic } from "react";
 const NewProject = () => {
+    const [optimisticProject, addOptimisticProject] = useState<FormData | null>(null);
     const formRef = useRef<HTMLFormElement>(null);
 
     async function action(data: FormData){
