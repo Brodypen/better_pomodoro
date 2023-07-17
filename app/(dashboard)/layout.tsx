@@ -2,7 +2,6 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Sidebar from "@/components/Sidebar";
-import clsx from "clsx";
 import GlassPane from "@/components/GlassPane";
 import { ReactElement } from 'react';
 
