@@ -1,23 +1,24 @@
 import Card from "./Card";
 import Image from "next/image";
 // import logo from "@/assets/images/logo.png";
-import SidebarLink from "./SideBarLink";
+// import SidebarLink from "./SideBarLink";
 import Link from "next/link";
 
-const links = [
-  { label: "Home", icon: "Grid", link: "/home" },
-  {
-    label: "Task",
-    icon: "Calendar",
-    link: "/pomodoro",
-  },
-  { label: "Profile", icon: "User", link: "/profile" },
-  {
-    label: "Settings",
-    icon: "Settings",
-    link: "/settings",
-  },
-];
+// TODO: Refactor Navbar to use NavBarLink and const links, delete Sidebar.
+// const links = [
+//   { label: "Home", icon: "Grid", link: "/home" },
+//   {
+//     label: "Task",
+//     icon: "Calendar",
+//     link: "/pomodoro",
+//   },
+//   { label: "Profile", icon: "User", link: "/profile" },
+//   {
+//     label: "Settings",
+//     icon: "Settings",
+//     link: "/settings",
+//   },
+// ];
 
 const Navbar = () => {
   return (
