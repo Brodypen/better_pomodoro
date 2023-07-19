@@ -14,8 +14,8 @@ const NotFound = () => {
         <div>
           <h1 aria-label="404 Not Found">404</h1>
           <p>Page Not found!</p>
-          <Link href="/">
-            <Button>Back to safety!</Button>
+          <Link href="/" className="text-blue-400">
+            Back to safety
           </Link>
         </div>
       </main>

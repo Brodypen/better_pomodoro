@@ -8,7 +8,7 @@ const links = [
   {
     label: "Calendar",
     icon: "Calendar",
-    link: "/calendar",
+    link: "/pomodoro",
   },
   { label: "Profile", icon: "User", link: "/profile" },
   {
