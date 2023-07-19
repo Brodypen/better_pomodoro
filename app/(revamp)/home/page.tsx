@@ -1,6 +1,7 @@
-import NavBar from '@/components/NavBar';
-import { Metadata } from 'next';
-import React from 'react'
+import { ModeToggle } from "@/components/ModeToggle";
+import NavBar from "@/components/NavBar";
+import { Metadata } from "next";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Revamp Home",
@@ -10,13 +11,14 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <div>
-      <div className="h-screen w-screen max-w-7xl p-8 flex justify-center bg-red-400">
+      <div className="h-screen w-screen max-w-7xl p-8 flex justify-center">
         page
+        <ModeToggle />
       </div>
 
       <NavBar />
     </div>
   );
-}
+};
 
-export default Page
+export default Page;
