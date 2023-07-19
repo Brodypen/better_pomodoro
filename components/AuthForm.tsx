@@ -70,7 +70,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
           {mode === "register" && (
             <div className="flex mb-8 justify-between">
               <div className="pr-2">
-                <div className="text-lg mb-4 ml-2 text-black/50">
+                <div className="text-lg mb-4 ml-2">
                   First Name
                 </div>
                 <Input
@@ -84,7 +84,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
                 />
               </div>
               <div className="pl-2">
-                <div className="text-lg mb-4 ml-2 text-black/50">Last Name</div>
+                <div className="text-lg mb-4 ml-2">Last Name</div>
                 <Input
                   required
                   placeholder="Last Name"
@@ -98,7 +98,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
             </div>
           )}
           <div className="mb-8">
-            <div className="text-lg mb-4 ml-2 text-black/50">Email</div>
+            <div className="text-lg mb-4 ml-2">Email</div>
             <Input
               required
               type="email"
@@ -111,7 +111,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
             />
           </div>
           <div className="mb-8">
-            <div className="text-lg mb-4 ml-2 text-black/50">Password</div>
+            <div className="text-lg mb-4 ml-2">Password</div>
             <Input
               required
               value={formState.password}
