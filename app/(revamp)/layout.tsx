@@ -17,7 +17,7 @@ export default function DashboardRootLayout({ children }: DashBoardProps) {
     <html lang="en">
       <head />
       <body className="">
-        <main className="h-screen w-screen max-w-7xl p-8 flex justify-center">
+        <main className="h-screen w-screen max-w-7xl p-8 flex justify-center bg-red-400">
           {children}
         </main>
         <Navbar />

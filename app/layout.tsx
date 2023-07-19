@@ -15,7 +15,7 @@ export default function RootLayout({ children }: Props) {
     <html lang="en">
       <head />
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSyste>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
       </body>
