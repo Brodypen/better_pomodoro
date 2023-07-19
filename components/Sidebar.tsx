@@ -6,9 +6,9 @@ import SidebarLink from "./SideBarLink";
 const links = [
   { label: "Home", icon: "Grid", link: "/home" },
   {
-    label: "Calendar",
+    label: "task",
     icon: "Calendar",
-    link: "/pomodoro",
+    link: "/task",
   },
   { label: "Profile", icon: "User", link: "/profile" },
   {
