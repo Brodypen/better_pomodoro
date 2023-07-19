@@ -1,3 +1,4 @@
+import NavBar from '@/components/NavBar';
 import { Metadata } from 'next';
 import React from 'react'
 
@@ -8,8 +9,14 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-    <div>page</div>
-  )
+    <div>
+      <div className="h-screen w-screen max-w-7xl p-8 flex justify-center bg-red-400">
+        page
+      </div>
+
+      <NavBar />
+    </div>
+  );
 }
 
 export default Page

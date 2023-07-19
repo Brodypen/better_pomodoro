@@ -20,15 +20,17 @@ export default async function middleware(req: NextRequest, res: NextResponse) {
     pathname.startsWith("/static") ||
     pathname.startsWith("/signin") ||
     pathname.startsWith("/register") ||
+    pathname == "/" ||
     PUBLIC_FILE.test(pathname)
   ) {
     return NextResponse.next();
   }
 
   const jwt = req.cookies.get(process.env.COOKIE_NAME as string);
+  console.log(jwt);
 
   if (!jwt) {
-    req.nextUrl.pathname = "/";
+    req.nextUrl.pathname = "/signin";
     return NextResponse.redirect(req.nextUrl);
   }
 
