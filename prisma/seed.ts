@@ -49,14 +49,14 @@ async function main() {
     )
   );
 
-  console.log({ user, tasks });
+  console.log("el", { user, tasks });
 }
 main()
   .then(async () => {
     await db.$disconnect();
   })
   .catch(async (e) => {
-    console.error(e);
+    console.error("se", e);
     await db.$disconnect();
     process.exit(1);
   });
