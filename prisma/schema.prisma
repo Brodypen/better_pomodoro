@@ -19,7 +19,7 @@ model User {
   lastName  String?
   projects  Project[]
   tasks     Task[]
-  pomodors Pomodoro[]
+  stats    Stats[]
 }
 
 model Project {
@@ -59,14 +59,18 @@ model Task {
 
   status      TASK_STATUS @default(NOT_STARTED)
   name        String
-  description String
+  description String?
+  duration    Int?
+  icon        String?
+  date        DateTime?
 
   due     DateTime?
   deleted Boolean   @default(false)
 
   @@index([ownerId])
 }
-model Pomodoro {
+
+model Stats {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -74,9 +78,8 @@ model Pomodoro {
   ownerId String
   owner   User   @relation(fields: [ownerId], references: [id])
 
-  start DateTime
-  end   DateTime
-  deleted Boolean   @default(false)
+  date DateTime
+  duration Int
 
   @@index([ownerId])
 }
