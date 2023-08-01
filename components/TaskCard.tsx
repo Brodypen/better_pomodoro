@@ -15,7 +15,7 @@ const getData = async () => {
         deleted: false,
       },
     },
-    take: 5,
+    take: 3,
     orderBy: {
       due: "asc",
     },
@@ -30,7 +30,7 @@ const TaskCard = async ({ title, tasks }) => {
     <Card className="">
       <div className="flex justify-between items-center">
         <div>
-          <span className="text-3xl text-gray-600">{title}</span>
+          <span className="text-3xl">{title}</span>
         </div>
         <div>
           <Button className="text-violet-600">
@@ -44,10 +44,10 @@ const TaskCard = async ({ title, tasks }) => {
             {data.map((task) => (
               <div className="py-2 " key={task.id}>
                 <div>
-                  <span className="text-gray-800">{task.name}</span>
+                  <span className="">{task.name}</span>
                 </div>
                 <div>
-                  <span className="text-gray-400 text-sm">
+                  <span className="text-sm">
                     {task.description}
                   </span>
                 </div>
